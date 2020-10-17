@@ -1,0 +1,24 @@
+{
+  "name": "eth-vdf",
+  "version": "0.0.1",
+  "description": "Weak Verifiable Delay Function with modular square root",
+  "main": "index.js",
+  "repository": "https://github.com/circle-free/eth-vdf.git",
+  "author": "Eric Chen",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "truffle test",
+    "ganache": "ganache-cli",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "prettier": "prettier --write 'contracts/**/*.sol'",
+    "compile": "truffle compile"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "prettier": "^2.1.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.59",
+    "truffle": "^5.1.48"
+  }
+}

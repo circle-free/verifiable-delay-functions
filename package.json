@@ -1,0 +1,22 @@
+{
+  "name": "verifiable-delay-functions",
+  "version": "0.0.1",
+  "description": "Weak Verifiable Delay Functions in NodeJs and Solidity",
+  "main": "js/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/circle-free/verifiable-delay-functions.git"
+  },
+  "keywords": [
+    "vdf",
+    "verifiable delay functions",
+    "proof of delay"
+  ],
+  "author": "Circle-Free",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/circle-free/verifiable-delay-functions/issues"
+  },
+  "homepage": "https://github.com/circle-free/verifiable-delay-functions#readme",
+  "private": false
+}

@@ -1,0 +1,18 @@
+{
+  "python.linting.enabled": true,
+  "cSpell.words": [
+    "Ropsten's",
+    "SPDX",
+    "blockhash",
+    "gitignored",
+    "hdwallet",
+    "mulmod",
+    "prover's",
+    "selfdestruct",
+    "simplevdf",
+    "struct",
+    "trufflesuite",
+    "vdfs",
+    "websockets"
+  ]
+}
