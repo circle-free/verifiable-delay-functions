@@ -14,23 +14,24 @@ def sqrt_mod_p_verify(y, x, p):
 
 
 def is_quadratic_residue(x, p):
-    return pow(x, (p - 1) // 2, p) == 1
+    return pow(x, (p - 1) >> 1, p) == 1
 
 
-def mod_sqrt_op(x, p):
+def mod_sqrt_op(x, e, p):
     # if not is_quadratic_residue(x, p):
     #     print(x, 'is not quad res')
     #     x = (-x) % p
     #     # x = p - x
     
-    return pow(x, (p + 1) // 4, p)
+    return pow(x, e, p)
 
 
 def mod_op(x, t):
     x = x % p
+    e = (p + 1) >> 2
 
     for _ in range(t):
-        x = mod_sqrt_op(x, p)
+        x = mod_sqrt_op(x, e, p)
     
     return x
 
@@ -52,7 +53,7 @@ def mod_verify(y, x, t):
 
 print('started')
 
-x = 979420384
+x = 15407604648144170858455308405060162460500784633725363367539502074216831223793
 t = 1000
 
 start = time.time()
