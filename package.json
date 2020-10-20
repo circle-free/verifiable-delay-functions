@@ -10,13 +10,37 @@
   "keywords": [
     "vdf",
     "verifiable delay functions",
-    "proof of delay"
+    "proof of delay",
+    "ethereum",
+    "solidity"
   ],
+  "scripts": {
+    "test": "mocha 'js/tests' && truffle test",
+    "test-eth": "truffle test",
+    "test-js": "mocha 'js/tests'",
+    "ganache": "ganache-cli",
+    "lint-eth": "solhint 'eth/contracts/**/*.sol'",
+    "prettier": "prettier --write 'eth/contracts/**/*.sol' 'eth/tests/**/*.js' 'js/src/**/*.js' 'js/tests/**/*.js'",
+    "prettier-eth": "prettier --write 'eth/contracts/**/*.sol' 'eth/tests/**/*.js'",
+    "prettier-js": "prettier --write 'js/src/**/*.js' 'js/tests/**/*.js'",
+    "compile-eth": "yarn truffle compile"
+  },
   "author": "Circle-Free",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/circle-free/verifiable-delay-functions/issues"
   },
   "homepage": "https://github.com/circle-free/verifiable-delay-functions#readme",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^8.2.0",
+    "prettier": "^2.1.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.59",
+    "truffle": "^5.1.49"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
