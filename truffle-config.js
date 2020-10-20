@@ -48,14 +48,14 @@ module.exports = {
       network_id: "5777",    // Any network (default: none)
     },
     // Another network with more advanced options...
-    // advanced: {
+    advanced: {
     // port: 8777,             // Custom port
     // network_id: 1342,       // Custom network
-    gas: 5000000,              // Gas sent with each transaction (default: ~6700000)
-    gasPrice: 2000000000,      // 2 gwei (in wei) (default: 100 gwei)
+      gas: 5000000,            // Gas sent with each transaction (default: ~6700000)
+      gasPrice: 2000000000,    // 2 gwei (in wei) (default: 100 gwei)
     // from: <address>,        // Account to send txs from (default: accounts[0])
     // websockets: true        // Enable EventEmitter interface for web3 (default: false)
-    // },
+    },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     // ropsten: {
@@ -73,6 +73,11 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
   },
+
+  contracts_directory: "./eth/contracts",
+  contracts_build_directory: "./eth/build",
+  migrations_directory: "./eth/migrations",
+  test_directory: './eth/tests',
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
