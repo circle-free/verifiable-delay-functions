@@ -10,7 +10,7 @@ let contractInstance = null;
 
 contract('Test Harness', async (accounts) => {
   before(async () => {
-    contractInstance = await Sloth_Test_Harness.new();
+    contractInstance = await Sloth_Test_Harness.deployed();
   });
 
   afterEach(() => contractInstance.set('0'));
