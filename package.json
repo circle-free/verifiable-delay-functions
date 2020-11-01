@@ -2,7 +2,7 @@
   "name": "verifiable-delay-functions",
   "version": "0.0.4",
   "description": "Weak Verifiable Delay Functions in NodeJs and Solidity",
-  "main": "js/src/index.js",
+  "main": "js/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/circle-free/verifiable-delay-functions.git"
@@ -15,7 +15,7 @@
     "solidity"
   ],
   "scripts": {
-    "test": "mocha 'js/tests' && truffle test",
+    "test": "mocha 'js/tests' && truffle migrate && truffle test",
     "test-eth": "truffle test",
     "test-js": "mocha 'js/tests'",
     "ganache": "ganache-cli",
@@ -43,5 +43,9 @@
   },
   "engines": {
     "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "threads": "^1.6.3",
+    "web3-core-promievent": "^1.3.0"
   }
 }
