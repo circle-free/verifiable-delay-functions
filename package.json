@@ -1,6 +1,6 @@
 {
   "name": "verifiable-delay-functions",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Weak Verifiable Delay Functions in NodeJs and Solidity",
   "main": "js/index.js",
   "repository": {
